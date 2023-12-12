@@ -6,7 +6,11 @@
     column-gap: 1px;
     row-gap:1px
     
-    
+}
+
+body {
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 86%, rgba(0,212,255,1) 100%);
 }
 
 .page-wrapper {
@@ -22,40 +26,52 @@ header {
     grid-row-end: 2;
 
     background-size: cover;
-	width: 500px;
-    height: 160px;
+	max-width: 100%;
+    max-height: 160px;
+    font-size: 25px;
 
 	margin: 40px;
 
-	border: purple 1px;
-	border-style: ridge;
-    background-color: black;
 
 	padding: 20px;
+
+    vertical-align:top;
+    display:inline-block; 
+
+
 }
 
-.summary, .preamble {
-    grid-column-start: 4;
-    grid-column-end: 7;
+.summary {
+    grid-column-start: 1;
+    grid-column-end: 2;
 
-    grid-row-start: 1;
+    grid-row-start: 2;
     grid-row-end: 3;   
     
    
     background-size: cover;
 	width: 800px;
     height: 340px;
+    left: 300px;
+    
+}
 
-	margin: 40px;
+.preamble {
+    grid-column-start: 3;
+    grid-column-end: 9;
 
-	border: purple 1px;
-	border-style: ridge;
-    background-color: black;
+    grid-row-start: 3;
+    grid-row-end: 2;   
+    
+   
+    background-size: cover;
+	width: 800px;
+    height: 340px;
+
+
+
 
 	padding: 20px;
-
-    vertical-align:top;
-    display:inline-block; 
 }
 
 .main {
@@ -65,40 +81,51 @@ header {
     grid-row-start: 4;
     grid-row-end: 9;
 
-    text-align: center;
+    text-align: left;
     left: 0;
+    font-size: 20px;
 
     background-size: cover;
 	max-width: 20%;
 
 	margin: 40px;
 
-	border: purple 1px;
-	border-style: ridge;
+
 
 	padding: 20px;
 
-    width: 1000px;
-    height: 10000px;
+    width: 7000px;
+    height: 2500px;
 
     vertical-align:top;
     display:inline-block; 
 }
 
-.sidebar {
+.sidebar a {
+    position: fixed; 
+    right: -110px; 
+    transition: 0.3s; 
+    padding: 15px;           /*<---this code was from https://www.w3schools.com/howto/howto_css_sidenav_buttons.asp */
+    width: 100px; 
+    text-decoration: none;
+    font-size: 20px; 
+    color: white; 
+    border-radius: 0 5px 5px 0;
+}
+
+.sidebar a:hover{
     position: fixed;
     text-align: center;
     font-size: 12px;
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: purple;
+    background: rgb(2,0,36);
+    background: linear-gradient(85deg, rgba(2,0,36,1) 49%, rgba(0,212,255,1) 100%);
 
     background-size: cover;
 	max-width: 20%;
 
-	border: purple 1px;
-	border-style: ridge;
 
 	padding: 20px;
 
@@ -108,3 +135,4 @@ header {
 
 
 
+/* gradiants used were from https://cssgradient.io /*
