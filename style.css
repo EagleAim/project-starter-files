@@ -1,6 +1,7 @@
-
+/* grid layout */
 html {
     color: gold;
+    display: grid;
 }
 
 body {
@@ -11,50 +12,52 @@ body {
 }
 
 .page-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    
   }
 
 header {
+    
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 3;
+
+    font-size: 40px;
 
     background-size: cover;
-    font-size: 25px;
 	margin: 40px;
 	padding: 20px;
-    width: 550px;
-    left: 100px;
+    max-width: 100%;
+    position: relative;
 }
 
 .summary {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;   
+    
+    grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 7;   
     
    
     background-size: cover;
-    height: 340px;
-    padding: 20px;
-    width: 550px;
-    left: 100px;
+    height: 50%;
+    padding-left: 20px;
+    width: 80%;
+    position: relative; 
 }
 
 .preamble {
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 3;
-    grid-row-end: 2;   
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;   
     
-   position: relative;
+    
     background-size: cover;
-	width: 800px;
-    height: 340px;
-	padding: 20px;
-    float: right;
+	max-width: 50%;
+    max-height: 10%;
+	padding-left: 20px;
+    position: relative; 
 }
 
 .main {
@@ -64,23 +67,14 @@ header {
     grid-row-end: 9;
 
     text-align: left;
-    left: 0;
     font-size: 20px;
 
     background-size: cover;
-	max-width: 20%;
-
 	margin: 40px;
-
-
-
-	padding: 20px;
-
+	padding-left: 20px;
     max-width: 100%;
     max-height: 100%;
-
-    vertical-align:top;
-    display:inline-block; 
+     position: relative; 
 }
 
 .wrapper  {
@@ -114,6 +108,15 @@ header {
     background: linear-gradient(90deg, rgba(2,0,36,1) 56%, rgba(0,212,255,1) 91%);
 }
 
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;;
+}
 
 /* gradiants used were from https://cssgradient.io /*
