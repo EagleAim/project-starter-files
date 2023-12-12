@@ -1,11 +1,6 @@
 
 * {
     color: gold;
-
-    display: grid;
-    column-gap: 1px;
-    row-gap:1px
-    
 }
 
 body {
@@ -20,21 +15,18 @@ body {
 
 header {
     grid-column-start: 1;
-    grid-column-end: 3;
-
+    grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
 
     background-size: cover;
-	max-width: 100%;
-    max-height: 160px;
+	max-width: 20%;
     font-size: 25px;
-
 	margin: 40px;
-
-
 	padding: 20px;
 
+
+    text-align: center;
     vertical-align:top;
     display:inline-block; 
 
@@ -44,7 +36,6 @@ header {
 .summary {
     grid-column-start: 1;
     grid-column-end: 2;
-
     grid-row-start: 2;
     grid-row-end: 3;   
     
@@ -53,13 +44,11 @@ header {
 	width: 800px;
     height: 340px;
     left: 300px;
-    
 }
 
 .preamble {
-    grid-column-start: 3;
+    grid-column-start: 5;
     grid-column-end: 9;
-
     grid-row-start: 3;
     grid-row-end: 2;   
     
@@ -67,17 +56,12 @@ header {
     background-size: cover;
 	width: 800px;
     height: 340px;
-
-
-
-
 	padding: 20px;
 }
 
 .main {
     grid-column-start: 1;
     grid-column-end: 9;
-
     grid-row-start: 4;
     grid-row-end: 9;
 
@@ -101,36 +85,35 @@ header {
     display:inline-block; 
 }
 
-.sidebar a {
+.wrapper  {
     position: fixed; 
-    right: -110px; 
-    transition: 0.3s; 
+    right: -100px; 
+    transition: 1s; 
     padding: 15px;           /*<---this code was from https://www.w3schools.com/howto/howto_css_sidenav_buttons.asp */
     width: 100px; 
+    
     text-decoration: none;
     font-size: 20px; 
-    color: white; 
-    border-radius: 0 5px 5px 0;
-}
+    color: gold; 
+} 
 
-.sidebar a:hover{
+.wrapper :hover{
     position: fixed;
-    text-align: center;
-    font-size: 12px;
+    font-size: 15px;
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgb(2,0,36);
-    background: linear-gradient(85deg, rgba(2,0,36,1) 49%, rgba(0,212,255,1) 100%);
+ 
 
     background-size: cover;
 	max-width: 20%;
-
-
 	padding: 20px;
 
-    vertical-align:top;
-    display:inline-block; 
+    border-left-width: 5px;
+    border-color: gold;
+    border-style: ridge;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 56%, rgba(0,212,255,1) 91%);
 }
 
 
