@@ -1,39 +1,88 @@
 
 * {
-    background-color: black;
     color: gold;
 
     display: grid;
     column-gap: 1px;
     row-gap:1px
+    
+    
 }
 
-header {
+.page-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-.intro {
+header {
     grid-column-start: 1;
     grid-column-end: 3;
 
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 2;
+
+    background-size: cover;
+	width: 500px;
+    height: 160px;
+
+	margin: 40px;
+
+	border: purple 1px;
+	border-style: ridge;
+    background-color: black;
+
+	padding: 20px;
+}
+
+.summary, .preamble {
+    grid-column-start: 4;
+    grid-column-end: 7;
+
+    grid-row-start: 1;
+    grid-row-end: 3;   
     
-    padding: 2px;
+   
+    background-size: cover;
+	width: 800px;
+    height: 340px;
+
+	margin: 40px;
+
+	border: purple 1px;
+	border-style: ridge;
+    background-color: black;
+
+	padding: 20px;
+
+    vertical-align:top;
+    display:inline-block; 
 }
 
 .main {
-    grid-column-start: 6;
+    grid-column-start: 1;
     grid-column-end: 9;
 
     grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-end: 9;
 
     text-align: center;
     left: 0;
 
-    padding: 2px;
+    background-size: cover;
+	max-width: 20%;
+
+	margin: 40px;
+
+	border: purple 1px;
+	border-style: ridge;
+
+	padding: 20px;
+
+    width: 1000px;
+    height: 10000px;
+
+    vertical-align:top;
+    display:inline-block; 
 }
 
 .sidebar {
@@ -45,6 +94,17 @@ header {
     bottom: 0;
     background-color: purple;
 
-    padding: 2px;
+    background-size: cover;
+	max-width: 20%;
+
+	border: purple 1px;
+	border-style: ridge;
+
+	padding: 20px;
+
+    vertical-align:top;
+    display:inline-block; 
 }
+
+
 
